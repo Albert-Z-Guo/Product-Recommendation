@@ -6,8 +6,8 @@ The following results are obtained using `R_hat_4` to initialize:
 
 | Algorithm | Iterations to Converge |   Time   |  RMSE  |
 |-----------|------------------------|----------|--------|
-| EM        | 23                     | ~60 min  | 1.0751 |
-| McMichael | 33                     | ~60 min  | 1.0751 |
+| EM        | 26                     | ~39 min  | 1.0751 |
+| McMichael | 35                     | ~35 min  | 1.0751 |
 
 All results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor.
 
