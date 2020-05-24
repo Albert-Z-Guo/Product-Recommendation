@@ -6,8 +6,8 @@ The following results, amazingly identical to the results mentioned in paper, ar
 
 | Algorithm | Iterations to Converge |   Time   |  RMSE  |
 |-----------|------------------------|----------|--------|
-| EM        | 26                     | ~39 min  | 0.9170 |
-| McMichael | 35                     | ~35 min  | 0.9170 |
+| EM        | 26                     | ~38 min  | 0.9170 |
+| McMichael | 35                     | ~38 min  | 0.9170 |
 
 All results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor. Note that `tf.function()` is used extensively (to construct callables that execute static TensorFlow graphs) to accelerate computing in this project.
 
