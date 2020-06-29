@@ -4,12 +4,16 @@ This repository contains a modern implementation of a 2010 paper [Application of
 ## Performance Evaluation
 The following results, amazingly identical to the results mentioned in paper, are obtained using `R_hat_4` to initialize:
 
-| Algorithm | Iterations to Converge |   Time   |  RMSE  |
-|-----------|------------------------|----------|--------|
-| EM        | 26                     | ~38 min  | 0.9170 |
-| McMichael | 35                     | ~38 min  | 0.9170 |
+| Number of Movies (k) | Number of Users (n) | Data Preprocessing Time |
+|----------------------|---------------------|-------------------------|
+| 100                  | 137328              | ~12 min                 |
 
-All results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor. Note that `tf.function()` is used extensively (to construct callables that execute static TensorFlow graphs) to accelerate computing in this project.
+| Algorithm | Iterations to Converge | Runtime | RMSE   |
+|-----------|------------------------|---------|--------|
+| EM        | 26                     | ~39 min | 0.9170 |
+| McMichael | 35                     | ~38 min | 0.9170 |
+
+All results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor with 32GB RAM. Note that `tf.function()` is used extensively (to construct callables that execute static TensorFlow graphs) to accelerate computing in this project.
 
 For more background of the Netflix Prize:
 - [The Story of the Netflix Prize: An Ensembler’s Tale](https://web.stanford.edu/~lmackey/papers/netflix_story-nas11-slides.pdf)
