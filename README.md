@@ -6,7 +6,7 @@ The following results, amazingly identical to the results mentioned in paper, ar
 
 | Number of Movies (k) | Number of Users (n) | Data Preprocessing Time |
 |----------------------|---------------------|-------------------------|
-| 100                  | 137328              | ~10 min                 |
+| 100                  | 137328              | ~6 min                 |
 
 | Algorithm | Iterations to Converge | Runtime | RMSE   |
 |-----------|------------------------|---------|--------|
