@@ -1,5 +1,6 @@
-numexpr==2.7.1
-numpy==1.18.5
-pandas==1.1.2
-tensorflow==2.3.1
-tqdm==4.47.0
+
+insightface
+mxnet
+numpy
+opencv-python
+Pillow
