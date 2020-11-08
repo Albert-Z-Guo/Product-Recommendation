@@ -7,7 +7,7 @@ This repository contains a modern implementation of a 2010 paper [Application of
 | 100                  | 137328              | ~6 min                  |
 | 17700                | 480189              | ~95 min                 |
 
-The initial experiments are run on the 100 movies with the greatest number of observed. We obtain the following results amazingly identical to the results mentioned in paper:
+The initial experiments were run on the 100 movies with the greatest number of observed. We obtained the following results amazingly identical to the results mentioned in paper:
 
 | Algorithm | Iterations to Converge | Runtime | RMSE   | Initial Estimate of R | 
 |-----------|------------------------|---------|--------|-----------------------|
@@ -21,7 +21,7 @@ For full-scale experiments:
 | EM        | 26                     |         |        | <img src="https://render.githubusercontent.com/render/math?math=\hat{R}^0_4">             |
 | McMichael | 35                     |         |        | <img src="https://render.githubusercontent.com/render/math?math=\hat{R}^0_4">             |
 
-All results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor with 32GB RAM. Note that `tf.function()` is used extensively (to construct callables that execute static TensorFlow graphs) to accelerate computing in this project.
+The preprocessed data and initial experiments' results were obtained using a 2.2 GHz 6-Core Intel Core i7 processor with 32GB RAM. The full-scale experiemnts' results were obtained using a `ml.p3.2xlarge` notebook instance on [Amazon Web Services](https://aws.amazon.com/). Note that `tf.function()` is used extensively (to construct callables that execute static TensorFlow graphs) to accelerate computing in the initial experiments where all tensors are dense.
 
 For more background of the Netflix Prize:
 - [The Story of the Netflix Prize: An Ensembler’s Tale](https://web.stanford.edu/~lmackey/papers/netflix_story-nas11-slides.pdf)
