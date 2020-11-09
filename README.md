@@ -1,10 +1,23 @@
 # Product Recommendation
 This repository contains a modern implementation of a 2010 paper [Application of a Gaussian, Missing-Data Model to Product Recommendation](https://ieeexplore.ieee.org/document/5430993) in [TensorFlow](https://www.tensorflow.org/). The author of this paper was in team "The Ensemble" in 2009's $1 million [Netflix Prize](https://en.wikipedia.org/wiki/Netflix_Prize).
 
+## Getting Started
+To install all libraries/dependencies used in this project, run
+```bash
+pip3 install -r requirements.txt
+```
+
+Due to GitHub file size limit, `Y_full.csv` is broken down to smaller parts in `./data/Y_full`. To merge parts back to one file and put the merged file in `./data/`, run
+```bash
+cd ./data/Y_full
+cat part* > Y_full.csv
+mv Y_full.csv ..
+```
+
 ## Performance Evaluation
 | Number of Movies (k) | Number of Users (n) | Data Preprocessing Time |
 |----------------------|---------------------|-------------------------|
-| 100                  | 137328              | ~6 min                  |
+| 100                  | 137328              | ~1.5 min                  |
 | 17700                | 480189              | ~95 min                 |
 
 The initial experiments were run on the 100 movies with the greatest number of observed. We obtained the following results amazingly identical to the results mentioned in paper:
